@@ -37,9 +37,41 @@
     <script type="text/babel">
       function App() {
         return (
-          <button type="button" className="btn btn-primary">
-            按鈕
-          </button>
+          <div className="container mt-5">
+            <div className="row row-cols-2">
+              <div className="col">
+                <h2 className="fw-bold">產品列表</h2>
+                <table className="table table-hover align-middle">
+                  <thead>
+                    <tr>
+                      <th scope="col">產品名稱</th>
+                      <th scope="col">原價</th>
+                      <th scope="col">售價</th>
+                      <th scope="col">是否啟用</th>
+                      <th scope="col">查看細節</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">草莓莓果夾心圈</th>
+                      <td>150</td>
+                      <td>99</td>
+                      <td>1</td>
+                      <td>
+                        <button type="button" className="btn btn-primary">
+                          查看細節
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="col">
+                <h2 className="fw-bold">單一產品細節</h2>
+                <p className="text-secondary mt-3">請選擇一個商品查看</p>
+              </div>
+            </div>
+          </div>
         );
       }
 
